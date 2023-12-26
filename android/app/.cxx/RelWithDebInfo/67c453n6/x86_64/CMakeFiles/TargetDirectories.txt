@@ -1,0 +1,3 @@
+/Users/atakanyildirim/Projects/Mobile/NeoCortex/neocortexapp/android/app/.cxx/RelWithDebInfo/67c453n6/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/atakanyildirim/Projects/Mobile/NeoCortex/neocortexapp/android/app/.cxx/RelWithDebInfo/67c453n6/x86_64/CMakeFiles/edit_cache.dir
+/Users/atakanyildirim/Projects/Mobile/NeoCortex/neocortexapp/android/app/.cxx/RelWithDebInfo/67c453n6/x86_64/CMakeFiles/OpenCV_ffi.dir

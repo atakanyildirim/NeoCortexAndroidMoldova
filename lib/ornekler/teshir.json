@@ -1,0 +1,643 @@
+{
+  "Status": "Normal",
+  "Content": {
+    "Products": {
+      "1": {
+        "File_Name": "1691070493-2132930-443-D-1.jpg",
+        "File_Inference_Output": {
+          "1": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 368,
+            "x_min": 636,
+            "y_max": 578,
+            "x_max": 737,
+            "Display_Category": "Bremen"
+          },
+          "2": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 263,
+            "x_min": 348,
+            "y_max": 419,
+            "x_max": 423,
+            "Display_Category": "Bremen"
+          },
+          "3": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 121,
+            "x_min": 741,
+            "y_max": 368,
+            "x_max": 846,
+            "Display_Category": "Bremen"
+          },
+          "4": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 115,
+            "x_min": 645,
+            "y_max": 365,
+            "x_max": 751,
+            "Display_Category": "Bremen"
+          },
+          "5": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 380,
+            "x_min": 725,
+            "y_max": 593,
+            "x_max": 849,
+            "Display_Category": "Efes Pilsen"
+          },
+          "6": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 297,
+            "x_min": 860,
+            "y_max": 490,
+            "x_max": 942,
+            "Display_Category": "Efes Pilsen"
+          },
+          "7": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 592,
+            "x_min": 693,
+            "y_max": 739,
+            "x_max": 791,
+            "Display_Category": "Efes Pilsen"
+          },
+          "8": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 738,
+            "x_min": 734,
+            "y_max": 870,
+            "x_max": 813,
+            "Display_Category": "Efes Pilsen"
+          },
+          "9": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 267,
+            "x_min": 419,
+            "y_max": 422,
+            "x_max": 492,
+            "Display_Category": "Bremen"
+          },
+          "10": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 340,
+            "x_min": 225,
+            "y_max": 551,
+            "x_max": 330,
+            "Display_Category": "Bremen"
+          },
+          "11": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 745,
+            "x_min": 803,
+            "y_max": 874,
+            "x_max": 878,
+            "Display_Category": "Efes Pilsen"
+          },
+          "12": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 581,
+            "x_min": 534,
+            "y_max": 750,
+            "x_max": 602,
+            "Display_Category": "Bremen"
+          },
+          "13": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 597,
+            "x_min": 786,
+            "y_max": 747,
+            "x_max": 865,
+            "Display_Category": "Efes Pilsen"
+          },
+          "14": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 861,
+            "x_min": 674,
+            "y_max": 982,
+            "x_max": 747,
+            "Display_Category": "Efes Pilsen"
+          },
+          "15": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 272,
+            "x_min": 489,
+            "y_max": 425,
+            "x_max": 566,
+            "Display_Category": "Bremen"
+          },
+          "16": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 277,
+            "x_min": 563,
+            "y_max": 422,
+            "x_max": 638,
+            "Display_Category": "Bremen"
+          },
+          "17": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 723,
+            "x_min": 395,
+            "y_max": 853,
+            "x_max": 459,
+            "Display_Category": "Bremen"
+          },
+          "18": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 861,
+            "x_min": 744,
+            "y_max": 985,
+            "x_max": 809,
+            "Display_Category": "Efes Pilsen"
+          },
+          "19": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 860,
+            "x_min": 574,
+            "y_max": 961,
+            "x_max": 629,
+            "Display_Category": "Bremen"
+          },
+          "20": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 735,
+            "x_min": 670,
+            "y_max": 866,
+            "x_max": 748,
+            "Display_Category": "Efes Pilsen"
+          },
+          "22": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 569,
+            "x_min": 226,
+            "y_max": 752,
+            "x_max": 308,
+            "Display_Category": "Bremen"
+          },
+          "23": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 585,
+            "x_min": 605,
+            "y_max": 743,
+            "x_max": 670,
+            "Display_Category": "Bremen"
+          },
+          "24": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 714,
+            "x_min": 332,
+            "y_max": 848,
+            "x_max": 391,
+            "Display_Category": "Bremen"
+          },
+          "25": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 860,
+            "x_min": 804,
+            "y_max": 988,
+            "x_max": 866,
+            "Display_Category": "Efes Pilsen"
+          },
+          "26": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 850,
+            "x_min": 517,
+            "y_max": 955,
+            "x_max": 570,
+            "Display_Category": "Bremen"
+          },
+          "27": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 734,
+            "x_min": 596,
+            "y_max": 864,
+            "x_max": 660,
+            "Display_Category": "Bremen"
+          },
+          "28": {
+            "sap_code": "88004",
+            "label": "BREMEN-KUTU-KOLI",
+            "y_min": 795,
+            "x_min": 167,
+            "y_max": 876,
+            "x_max": 675,
+            "Display_Category": "Bremen"
+          },
+          "29": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 827,
+            "x_min": 270,
+            "y_max": 940,
+            "x_max": 330,
+            "Display_Category": "Bremen"
+          },
+          "30": {
+            "sap_code": "88002",
+            "label": "PILSEN-KUTU-KOLI",
+            "y_min": 941,
+            "x_min": 659,
+            "y_max": 998,
+            "x_max": 960,
+            "Display_Category": "Efes Pilsen"
+          },
+          "32": {
+            "sap_code": "88004",
+            "label": "BREMEN-KUTU-KOLI",
+            "y_min": 1070,
+            "x_min": 295,
+            "y_max": 1128,
+            "x_max": 628,
+            "Display_Category": "Bremen"
+          },
+          "33": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 960,
+            "x_min": 577,
+            "y_max": 1048,
+            "x_max": 632,
+            "Display_Category": "Bremen"
+          },
+          "34": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 839,
+            "x_min": 332,
+            "y_max": 946,
+            "x_max": 387,
+            "Display_Category": "Bremen"
+          },
+          "35": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 972,
+            "x_min": 699,
+            "y_max": 1059,
+            "x_max": 759,
+            "Display_Category": "Efes Pilsen"
+          },
+          "36": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 952,
+            "x_min": 518,
+            "y_max": 1042,
+            "x_max": 567,
+            "Display_Category": "Bremen"
+          },
+          "37": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 743,
+            "x_min": 869,
+            "y_max": 874,
+            "x_max": 939,
+            "Display_Category": "Efes Pilsen"
+          },
+          "38": {
+            "sap_code": "88002",
+            "label": "PILSEN-KUTU-KOLI",
+            "y_min": 541,
+            "x_min": 730,
+            "y_max": 609,
+            "x_max": 960,
+            "Display_Category": "Efes Pilsen"
+          },
+          "39": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 967,
+            "x_min": 639,
+            "y_max": 1056,
+            "x_max": 704,
+            "Display_Category": "Efes Pilsen"
+          },
+          "40": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 868,
+            "x_min": 870,
+            "y_max": 992,
+            "x_max": 938,
+            "Display_Category": "Efes Pilsen"
+          },
+          "41": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 1047,
+            "x_min": 567,
+            "y_max": 1122,
+            "x_max": 620,
+            "Display_Category": "Bremen"
+          },
+          "42": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 848,
+            "x_min": 451,
+            "y_max": 952,
+            "x_max": 508,
+            "Display_Category": "Bremen"
+          },
+          "43": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 1043,
+            "x_min": 623,
+            "y_max": 1132,
+            "x_max": 685,
+            "Display_Category": "Efes Pilsen"
+          },
+          "44": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 1043,
+            "x_min": 514,
+            "y_max": 1120,
+            "x_max": 563,
+            "Display_Category": "Bremen"
+          },
+          "45": {
+            "sap_code": "88004",
+            "label": "BREMEN-KUTU-KOLI",
+            "y_min": 904,
+            "x_min": 266,
+            "y_max": 970,
+            "x_max": 635,
+            "Display_Category": "Bremen"
+          },
+          "46": {
+            "sap_code": "88002",
+            "label": "PILSEN-KUTU-KOLI",
+            "y_min": 827,
+            "x_min": 669,
+            "y_max": 880,
+            "x_max": 960,
+            "Display_Category": "Efes Pilsen"
+          },
+          "47": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 1050,
+            "x_min": 680,
+            "y_max": 1138,
+            "x_max": 738,
+            "Display_Category": "Efes Pilsen"
+          },
+          "48": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 982,
+            "x_min": 814,
+            "y_max": 1071,
+            "x_max": 878,
+            "Display_Category": "Efes Pilsen"
+          },
+          "49": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 1035,
+            "x_min": 413,
+            "y_max": 1108,
+            "x_max": 462,
+            "Display_Category": "Bremen"
+          },
+          "50": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 1053,
+            "x_min": 731,
+            "y_max": 1143,
+            "x_max": 789,
+            "Display_Category": "Efes Pilsen"
+          },
+          "51": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 1039,
+            "x_min": 461,
+            "y_max": 1116,
+            "x_max": 509,
+            "Display_Category": "Bremen"
+          },
+          "52": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 1024,
+            "x_min": 303,
+            "y_max": 1103,
+            "x_max": 359,
+            "Display_Category": "Bremen"
+          },
+          "53": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 1027,
+            "x_min": 361,
+            "y_max": 1106,
+            "x_max": 411,
+            "Display_Category": "Bremen"
+          },
+          "54": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 936,
+            "x_min": 289,
+            "y_max": 1025,
+            "x_max": 344,
+            "Display_Category": "Bremen"
+          },
+          "55": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 980,
+            "x_min": 757,
+            "y_max": 1063,
+            "x_max": 815,
+            "Display_Category": "Efes Pilsen"
+          },
+          "56": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 847,
+            "x_min": 391,
+            "y_max": 953,
+            "x_max": 447,
+            "Display_Category": "Bremen"
+          },
+          "57": {
+            "sap_code": "88004",
+            "label": "BREMEN-KUTU-KOLI",
+            "y_min": 996,
+            "x_min": 286,
+            "y_max": 1056,
+            "x_max": 631,
+            "Display_Category": "Bremen"
+          },
+          "58": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 949,
+            "x_min": 463,
+            "y_max": 1036,
+            "x_max": 511,
+            "Display_Category": "Bremen"
+          },
+          "59": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 1056,
+            "x_min": 786,
+            "y_max": 1150,
+            "x_max": 840,
+            "Display_Category": "Efes Pilsen"
+          },
+          "60": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 985,
+            "x_min": 875,
+            "y_max": 1075,
+            "x_max": 936,
+            "Display_Category": "Efes Pilsen"
+          },
+          "61": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 1062,
+            "x_min": 835,
+            "y_max": 1151,
+            "x_max": 889,
+            "Display_Category": "Efes Pilsen"
+          },
+          "62": {
+            "sap_code": "88002",
+            "label": "PILSEN-KUTU-KOLI",
+            "y_min": 1115,
+            "x_min": 629,
+            "y_max": 1161,
+            "x_max": 949,
+            "Display_Category": "Efes Pilsen"
+          },
+          "63": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 1071,
+            "x_min": 893,
+            "y_max": 1160,
+            "x_max": 958,
+            "Display_Category": "Efes Pilsen"
+          },
+          "65": {
+            "sap_code": "88002",
+            "label": "PILSEN-KUTU-KOLI",
+            "y_min": 696,
+            "x_min": 692,
+            "y_max": 749,
+            "x_max": 959,
+            "Display_Category": "Efes Pilsen"
+          },
+          "67": {
+            "sap_code": "88002",
+            "label": "PILSEN-KUTU-KOLI",
+            "y_min": 1027,
+            "x_min": 628,
+            "y_max": 1080,
+            "x_max": 960,
+            "Display_Category": "Efes Pilsen"
+          },
+          "68": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 874,
+            "x_min": 929,
+            "y_max": 990,
+            "x_max": 960,
+            "Display_Category": "Efes Pilsen"
+          },
+          "69": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 990,
+            "x_min": 929,
+            "y_max": 1075,
+            "x_max": 960,
+            "Display_Category": "Efes Pilsen"
+          },
+          "70": {
+            "sap_code": "150021",
+            "label": "PILSEN-50-KUTU",
+            "y_min": 608,
+            "x_min": 861,
+            "y_max": 746,
+            "x_max": 950,
+            "Display_Category": "Efes Pilsen"
+          },
+          "71": {
+            "sap_code": "152608",
+            "label": "BREMEN-KUTU",
+            "y_min": 1039,
+            "x_min": 407,
+            "y_max": 1120,
+            "x_max": 509,
+            "Display_Category": "Bremen"
+          },
+          "72": {
+            "sap_code": "88002",
+            "label": "PILSEN-KUTU-KOLI",
+            "y_min": 1049,
+            "x_min": 788,
+            "y_max": 1138,
+            "x_max": 843,
+            "Display_Category": "Efes Pilsen"
+          },
+          "73": {
+            "sap_code": "88004",
+            "label": "BREMEN-KUTU-KOLI",
+            "y_min": 742,
+            "x_min": 378,
+            "y_max": 857,
+            "x_max": 477,
+            "Display_Category": "Bremen"
+          },
+          "74": {
+            "sap_code": "88004",
+            "label": "BREMEN-KUTU-KOLI",
+            "y_min": 1049,
+            "x_min": 354,
+            "y_max": 1119,
+            "x_max": 551,
+            "Display_Category": "Bremen"
+          }
+        },
+        "Image_Display_Category": "Bremen"
+      }
+    }
+  }
+}

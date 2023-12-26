@@ -1,0 +1,924 @@
+{
+    "Status": "Normal",
+    "Content": {
+        "Products": {
+            "1": {
+                "File_Name": "1686216370-2126993-530-SH-1.jpg",
+                "File_Inference_Output": {
+                    "1": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 650,
+                        "x_min": 91,
+                        "y_max": 781,
+                        "x_max": 154
+                    },
+                    "2": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 488,
+                        "x_min": 72,
+                        "y_max": 650,
+                        "x_max": 143
+                    },
+                    "3": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 491,
+                        "x_min": 386,
+                        "y_max": 651,
+                        "x_max": 447
+                    },
+                    "4": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 650,
+                        "x_min": 382,
+                        "y_max": 782,
+                        "x_max": 438
+                    },
+                    "5": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 275,
+                        "x_min": 287,
+                        "y_max": 438,
+                        "x_max": 342
+                    },
+                    "6": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 648,
+                        "x_min": 150,
+                        "y_max": 780,
+                        "x_max": 211
+                    },
+                    "7": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 476,
+                        "x_min": 146,
+                        "y_max": 653,
+                        "x_max": 212
+                    },
+                    "8": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 285,
+                        "x_min": 388,
+                        "y_max": 435,
+                        "x_max": 446
+                    },
+                    "9": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 651,
+                        "x_min": 326,
+                        "y_max": 781,
+                        "x_max": 382
+                    },
+                    "10": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 274,
+                        "x_min": 233,
+                        "y_max": 435,
+                        "x_max": 290
+                    },
+                    "11": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 281,
+                        "x_min": 111,
+                        "y_max": 432,
+                        "x_max": 177
+                    },
+                    "12": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 997,
+                        "x_min": 334,
+                        "y_max": 1089,
+                        "x_max": 382
+                    },
+                    "13": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 275,
+                        "x_min": 339,
+                        "y_max": 437,
+                        "x_max": 390
+                    },
+                    "14": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 779,
+                        "x_min": 113,
+                        "y_max": 898,
+                        "x_max": 169
+                    },
+                    "15": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 897,
+                        "x_min": 331,
+                        "y_max": 997,
+                        "x_max": 382
+                    },
+                    "16": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 479,
+                        "x_min": 330,
+                        "y_max": 652,
+                        "x_max": 385
+                    },
+                    "17": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 779,
+                        "x_min": 171,
+                        "y_max": 898,
+                        "x_max": 226
+                    },
+                    "18": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 899,
+                        "x_min": 122,
+                        "y_max": 999,
+                        "x_max": 174
+                    },
+                    "19": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 899,
+                        "x_min": 175,
+                        "y_max": 998,
+                        "x_max": 225
+                    },
+                    "20": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 897,
+                        "x_min": 382,
+                        "y_max": 997,
+                        "x_max": 432
+                    },
+                    "21": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 282,
+                        "x_min": 667,
+                        "y_max": 439,
+                        "x_max": 722
+                    },
+                    "22": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 780,
+                        "x_min": 337,
+                        "y_max": 896,
+                        "x_max": 390
+                    },
+                    "23": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 997,
+                        "x_min": 383,
+                        "y_max": 1089,
+                        "x_max": 431
+                    },
+                    "24": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 997,
+                        "x_min": 186,
+                        "y_max": 1088,
+                        "x_max": 232
+                    },
+                    "25": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 289,
+                        "x_min": 722,
+                        "y_max": 436,
+                        "x_max": 783
+                    },
+                    "26": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 779,
+                        "x_min": 282,
+                        "y_max": 896,
+                        "x_max": 336
+                    },
+                    "27": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 651,
+                        "x_min": 687,
+                        "y_max": 786,
+                        "x_max": 742
+                    },
+                    "28": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 279,
+                        "x_min": 613,
+                        "y_max": 437,
+                        "x_max": 667
+                    },
+                    "29": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 276,
+                        "x_min": 515,
+                        "y_max": 433,
+                        "x_max": 566
+                    },
+                    "30": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 277,
+                        "x_min": 563,
+                        "y_max": 433,
+                        "x_max": 615
+                    },
+                    "31": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 481,
+                        "x_min": 521,
+                        "y_max": 654,
+                        "x_max": 579
+                    },
+                    "32": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 284,
+                        "x_min": 457,
+                        "y_max": 434,
+                        "x_max": 517
+                    },
+                    "33": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 998,
+                        "x_min": 135,
+                        "y_max": 1087,
+                        "x_max": 183
+                    },
+                    "34": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 777,
+                        "x_min": 226,
+                        "y_max": 896,
+                        "x_max": 281
+                    },
+                    "35": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 650,
+                        "x_min": 520,
+                        "y_max": 783,
+                        "x_max": 574
+                    },
+                    "36": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 898,
+                        "x_min": 226,
+                        "y_max": 996,
+                        "x_max": 277
+                    },
+                    "37": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 782,
+                        "x_min": 390,
+                        "y_max": 896,
+                        "x_max": 443
+                    },
+                    "38": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 653,
+                        "x_min": 266,
+                        "y_max": 782,
+                        "x_max": 325
+                    },
+                    "39": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 995,
+                        "x_min": 234,
+                        "y_max": 1087,
+                        "x_max": 282
+                    },
+                    "40": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 272,
+                        "x_min": 175,
+                        "y_max": 434,
+                        "x_max": 238
+                    },
+                    "41": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1102,
+                        "x_min": 659,
+                        "y_max": 1190,
+                        "x_max": 710
+                    },
+                    "42": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 781,
+                        "x_min": 567,
+                        "y_max": 902,
+                        "x_max": 619
+                    },
+                    "43": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 896,
+                        "x_min": 278,
+                        "y_max": 996,
+                        "x_max": 329
+                    },
+                    "44": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 906,
+                        "x_min": 651,
+                        "y_max": 1011,
+                        "x_max": 704
+                    },
+                    "45": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 477,
+                        "x_min": 274,
+                        "y_max": 655,
+                        "x_max": 332
+                    },
+                    "46": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1095,
+                        "x_min": 427,
+                        "y_max": 1185,
+                        "x_max": 477
+                    },
+                    "47": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 649,
+                        "x_min": 573,
+                        "y_max": 784,
+                        "x_max": 631
+                    },
+                    "48": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 1087,
+                        "x_min": 139,
+                        "y_max": 1179,
+                        "x_max": 187
+                    },
+                    "49": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 480,
+                        "x_min": 696,
+                        "y_max": 655,
+                        "x_max": 754
+                    },
+                    "50": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 899,
+                        "x_min": 441,
+                        "y_max": 1006,
+                        "x_max": 493
+                    },
+                    "51": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 995,
+                        "x_min": 283,
+                        "y_max": 1088,
+                        "x_max": 332
+                    },
+                    "52": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 651,
+                        "x_min": 634,
+                        "y_max": 784,
+                        "x_max": 688
+                    },
+                    "53": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 481,
+                        "x_min": 639,
+                        "y_max": 657,
+                        "x_max": 698
+                    },
+                    "54": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 491,
+                        "x_min": 461,
+                        "y_max": 651,
+                        "x_max": 523
+                    },
+                    "55": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 776,
+                        "x_min": 453,
+                        "y_max": 900,
+                        "x_max": 511
+                    },
+                    "56": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 780,
+                        "x_min": 512,
+                        "y_max": 902,
+                        "x_max": 566
+                    },
+                    "57": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1099,
+                        "x_min": 614,
+                        "y_max": 1189,
+                        "x_max": 660
+                    },
+                    "58": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 649,
+                        "x_min": 458,
+                        "y_max": 780,
+                        "x_max": 519
+                    },
+                    "59": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1003,
+                        "x_min": 439,
+                        "y_max": 1097,
+                        "x_max": 487
+                    },
+                    "60": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 908,
+                        "x_min": 704,
+                        "y_max": 1012,
+                        "x_max": 754
+                    },
+                    "61": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 1087,
+                        "x_min": 186,
+                        "y_max": 1179,
+                        "x_max": 232
+                    },
+                    "62": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 903,
+                        "x_min": 549,
+                        "y_max": 1008,
+                        "x_max": 602
+                    },
+                    "63": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 782,
+                        "x_min": 622,
+                        "y_max": 905,
+                        "x_max": 675
+                    },
+                    "64": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 1091,
+                        "x_min": 375,
+                        "y_max": 1183,
+                        "x_max": 422
+                    },
+                    "65": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1011,
+                        "x_min": 680,
+                        "y_max": 1104,
+                        "x_max": 733
+                    },
+                    "66": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 648,
+                        "x_min": 210,
+                        "y_max": 779,
+                        "x_max": 266
+                    },
+                    "67": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1000,
+                        "x_min": 737,
+                        "y_max": 1098,
+                        "x_max": 786
+                    },
+                    "68": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1099,
+                        "x_min": 567,
+                        "y_max": 1187,
+                        "x_max": 614
+                    },
+                    "69": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1097,
+                        "x_min": 478,
+                        "y_max": 1186,
+                        "x_max": 525
+                    },
+                    "70": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1004,
+                        "x_min": 487,
+                        "y_max": 1100,
+                        "x_max": 536
+                    },
+                    "71": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 904,
+                        "x_min": 602,
+                        "y_max": 1010,
+                        "x_max": 651
+                    },
+                    "72": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 481,
+                        "x_min": 578,
+                        "y_max": 657,
+                        "x_max": 637
+                    },
+                    "73": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 495,
+                        "x_min": 760,
+                        "y_max": 656,
+                        "x_max": 825
+                    },
+                    "74": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 474,
+                        "x_min": 209,
+                        "y_max": 655,
+                        "x_max": 274
+                    },
+                    "75": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 900,
+                        "x_min": 493,
+                        "y_max": 1007,
+                        "x_max": 547
+                    },
+                    "76": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1099,
+                        "x_min": 720,
+                        "y_max": 1187,
+                        "x_max": 771
+                    },
+                    "77": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 651,
+                        "x_min": 739,
+                        "y_max": 787,
+                        "x_max": 800
+                    },
+                    "78": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1001,
+                        "x_min": 787,
+                        "y_max": 1098,
+                        "x_max": 833
+                    },
+                    "79": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1096,
+                        "x_min": 862,
+                        "y_max": 1188,
+                        "x_max": 911
+                    },
+                    "80": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1099,
+                        "x_min": 523,
+                        "y_max": 1185,
+                        "x_max": 568
+                    },
+                    "81": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1097,
+                        "x_min": 770,
+                        "y_max": 1186,
+                        "x_max": 817
+                    },
+                    "82": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1009,
+                        "x_min": 634,
+                        "y_max": 1102,
+                        "x_max": 683
+                    },
+                    "83": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1097,
+                        "x_min": 816,
+                        "y_max": 1185,
+                        "x_max": 862
+                    },
+                    "84": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1006,
+                        "x_min": 537,
+                        "y_max": 1102,
+                        "x_max": 585
+                    },
+                    "85": {
+                        "sap_code": "150487",
+                        "label": "EXTRA-50-KUTU",
+                        "y_min": 876,
+                        "x_min": 858,
+                        "y_max": 1006,
+                        "x_max": 916
+                    },
+                    "86": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1006,
+                        "x_min": 587,
+                        "y_max": 1102,
+                        "x_max": 634
+                    },
+                    "87": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 783,
+                        "x_min": 727,
+                        "y_max": 909,
+                        "x_max": 781
+                    },
+                    "88": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 1085,
+                        "x_min": 279,
+                        "y_max": 1185,
+                        "x_max": 327
+                    },
+                    "89": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1001,
+                        "x_min": 833,
+                        "y_max": 1096,
+                        "x_max": 881
+                    },
+                    "90": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 1087,
+                        "x_min": 233,
+                        "y_max": 1180,
+                        "x_max": 279
+                    },
+                    "91": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 1001,
+                        "x_min": 883,
+                        "y_max": 1097,
+                        "x_max": 935
+                    },
+                    "92": {
+                        "sap_code": "88001",
+                        "label": "MALT-KUTU-KOLI",
+                        "y_min": 388,
+                        "x_min": 111,
+                        "y_max": 438,
+                        "x_max": 449
+                    },
+                    "93": {
+                        "sap_code": "150021",
+                        "label": "PILSEN-50-KUTU",
+                        "y_min": 782,
+                        "x_min": 676,
+                        "y_max": 910,
+                        "x_max": 730
+                    },
+                    "94": {
+                        "sap_code": "151271",
+                        "label": "MALT-KUTU",
+                        "y_min": 1090,
+                        "x_min": 327,
+                        "y_max": 1182,
+                        "x_max": 373
+                    },
+                    "95": {
+                        "sap_code": "88002",
+                        "label": "PILSEN-KUTU-KOLI",
+                        "y_min": 741,
+                        "x_min": 450,
+                        "y_max": 790,
+                        "x_max": 802
+                    },
+                    "96": {
+                        "sap_code": "88001",
+                        "label": "MALT-KUTU-KOLI",
+                        "y_min": 739,
+                        "x_min": 91,
+                        "y_max": 787,
+                        "x_max": 442
+                    },
+                    "97": {
+                        "sap_code": "88001",
+                        "label": "MALT-KUTU-KOLI",
+                        "y_min": 1153,
+                        "x_min": 139,
+                        "y_max": 1187,
+                        "x_max": 423
+                    },
+                    "98": {
+                        "sap_code": "88002",
+                        "label": "PILSEN-KUTU-KOLI",
+                        "y_min": 866,
+                        "x_min": 445,
+                        "y_max": 914,
+                        "x_max": 781
+                    },
+                    "100": {
+                        "sap_code": "88002",
+                        "label": "PILSEN-KUTU-KOLI",
+                        "y_min": 391,
+                        "x_min": 454,
+                        "y_max": 436,
+                        "x_max": 784
+                    },
+                    "101": {
+                        "sap_code": "88001",
+                        "label": "MALT-KUTU-KOLI",
+                        "y_min": 862,
+                        "x_min": 110,
+                        "y_max": 901,
+                        "x_max": 449
+                    },
+                    "102": {
+                        "sap_code": "88001",
+                        "label": "MALT-KUTU-KOLI",
+                        "y_min": 965,
+                        "x_min": 121,
+                        "y_max": 1001,
+                        "x_max": 431
+                    },
+                    "103": {
+                        "sap_code": "88001",
+                        "label": "MALT-KUTU-KOLI",
+                        "y_min": 1058,
+                        "x_min": 131,
+                        "y_max": 1092,
+                        "x_max": 434
+                    },
+                    "104": {
+                        "sap_code": "88002",
+                        "label": "PILSEN-KUTU-KOLI",
+                        "y_min": 1160,
+                        "x_min": 424,
+                        "y_max": 1193,
+                        "x_max": 714
+                    },
+                    "105": {
+                        "sap_code": "88002",
+                        "label": "PILSEN-KUTU-KOLI",
+                        "y_min": 1072,
+                        "x_min": 428,
+                        "y_max": 1105,
+                        "x_max": 740
+                    },
+                    "106": {
+                        "sap_code": "88002",
+                        "label": "PILSEN-KUTU-KOLI",
+                        "y_min": 967,
+                        "x_min": 749,
+                        "y_max": 1010,
+                        "x_max": 960
+                    },
+                    "107": {
+                        "sap_code": "150487",
+                        "label": "EXTRA-50-KUTU",
+                        "y_min": 874,
+                        "x_min": 808,
+                        "y_max": 1005,
+                        "x_max": 858
+                    },
+                    "108": {
+                        "sap_code": "88002",
+                        "label": "PILSEN-KUTU-KOLI",
+                        "y_min": 977,
+                        "x_min": 439,
+                        "y_max": 1011,
+                        "x_max": 754
+                    },
+                    "109": {
+                        "sap_code": "150487",
+                        "label": "EXTRA-50-KUTU",
+                        "y_min": 880,
+                        "x_min": 760,
+                        "y_max": 1003,
+                        "x_max": 811
+                    },
+                    "111": {
+                        "sap_code": "88002",
+                        "label": "PILSEN-KUTU-KOLI",
+                        "y_min": 1158,
+                        "x_min": 723,
+                        "y_max": 1192,
+                        "x_max": 911
+                    },
+                    "112": {
+                        "sap_code": "88002",
+                        "label": "PILSEN-KUTU-KOLI",
+                        "y_min": 1065,
+                        "x_min": 738,
+                        "y_max": 1102,
+                        "x_max": 936
+                    },
+                    "113": {
+                        "sap_code": "150487",
+                        "label": "EXTRA-50-KUTU",
+                        "y_min": 882,
+                        "x_min": 917,
+                        "y_max": 1003,
+                        "x_max": 959
+                    },
+                    "116": {
+                        "sap_code": "88001",
+                        "label": "MALT-KUTU-KOLI",
+                        "y_min": 564,
+                        "x_min": 153,
+                        "y_max": 690,
+                        "x_max": 372
+                    }
+                }
+            }
+        },
+        "Calculation_1": {
+            "AEFES": 0.73,
+            "TUBORG": 0.19,
+            "HEINKEN": 0.05,
+            "DIGER": 0.03
+        },
+        "Calculation_2": {
+            "AEFES": 0.75,
+            "TUBORG": 0.2,
+            "HEINKEN": 0.05
+        },
+        "Calculation_3": {
+            "AEFES": 0.79,
+            "TUBORG": 0.21
+        },
+        "Total Number Of Products": 114
+    }
+}

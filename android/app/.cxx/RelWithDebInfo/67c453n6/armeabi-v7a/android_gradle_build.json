@@ -1,0 +1,40 @@
+{
+  "buildFiles": [
+    "/Users/atakanyildirim/Projects/Mobile/NeoCortex/neocortexapp/android/app/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/atakanyildirim/Library/Android/sdk/cmake/3.18.1/bin/ninja",
+      "-C",
+      "/Users/atakanyildirim/Projects/Mobile/NeoCortex/neocortexapp/android/app/.cxx/RelWithDebInfo/67c453n6/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/atakanyildirim/Library/Android/sdk/cmake/3.18.1/bin/ninja",
+    "-C",
+    "/Users/atakanyildirim/Projects/Mobile/NeoCortex/neocortexapp/android/app/.cxx/RelWithDebInfo/67c453n6/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "OpenCV_ffi::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "armeabi-v7a",
+      "artifactName": "OpenCV_ffi",
+      "output": "/Users/atakanyildirim/Projects/Mobile/NeoCortex/neocortexapp/build/app/intermediates/cxx/RelWithDebInfo/67c453n6/obj/armeabi-v7a/libOpenCV_ffi.so",
+      "runtimeFiles": [
+        "/Users/atakanyildirim/Projects/Mobile/NeoCortex/neocortexapp/android/src/main/jniLibs/armeabi-v7a/libopencv_java4.so"
+      ]
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/atakanyildirim/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/atakanyildirim/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "216394594579",
+    "project_id": "neo-cortex-android",
+    "storage_bucket": "neo-cortex-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216394594579:android:9f677b2f70bdcd1bc482e6",
+        "android_client_info": {
+          "package_name": "com.neocortex.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXaDK8DkyKIZHTzu3-TNM2Gy23OzrAzNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

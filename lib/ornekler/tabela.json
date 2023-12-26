@@ -1,0 +1,22 @@
+{
+  "Status": "Normal",
+  "Content": {
+    "Signs": {
+      "Customer_Sap_Code": 1116,
+      "Received_Files": {
+        "1": {
+          "File_Name": "1702331329-1116-769-S-1.jpg",
+          "File_Inference_Output": {
+            "1": {
+              "label": "EFES-TABELA-CEPHE",
+              "y_min": 240,
+              "x_min": 87,
+              "y_max": 313,
+              "x_max": 273
+            }
+          }
+        }
+      }
+    }
+  }
+}

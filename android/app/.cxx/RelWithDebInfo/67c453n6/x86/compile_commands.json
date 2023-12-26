@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/atakanyildirim/Projects/Mobile/NeoCortex/neocortexapp/android/app/.cxx/RelWithDebInfo/67c453n6/x86",
+  "command": "/Users/atakanyildirim/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=i686-none-linux-android21 --gcc-toolchain=/Users/atakanyildirim/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/atakanyildirim/Library/Android/sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DOpenCV_ffi_EXPORTS -I../../../../../include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -std=c++17 -std=gnu++11 -stdlib=libc++ -O2 -g -DNDEBUG -fPIC -o CMakeFiles/OpenCV_ffi.dir/Users/atakanyildirim/Projects/Mobile/NeoCortex/neocortexapp/lib/opencv-cpp/main.cpp.o -c /Users/atakanyildirim/Projects/Mobile/NeoCortex/neocortexapp/lib/opencv-cpp/main.cpp",
+  "file": "/Users/atakanyildirim/Projects/Mobile/NeoCortex/neocortexapp/lib/opencv-cpp/main.cpp"
+}
+]
