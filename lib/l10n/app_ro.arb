@@ -181,5 +181,7 @@
   "hesaplama2" : "Calcul 2",
   "hesaplama3" : "Calcul 3",
   "digerleri" : "Alții",
-  "ziyaretEdememeNedeni" : "Ziyaret Edememe Nedeni Gir"
+  "ziyaretEdememeNedeni" : "Ziyaret Edememe Nedeni Gir",
+  "guncelleMesaji" : "Vă rugăm să actualizați aplicația.",
+  "guncelle" : "Actualizați"
 }  

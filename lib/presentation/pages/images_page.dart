@@ -99,7 +99,7 @@ class _ImagesPageState extends ResumableState<ImagesPage> with TickerProviderSta
       String? token = authenticateManager.getToken();
       String? project_id = authenticateManager.getProjectId();
 
-      String apiUrl = '$baseApiUrl/mobuploadimageswithvariableplanograms';
+      String apiUrl = '${AppConfig.baseApiUrl}/mobuploadimageswithvariableplanograms';
       var request = http.MultipartRequest('PUT', Uri.parse(apiUrl));
       final headers = {"Content-type": "multipart/form-data", "token": "$token", "project_id": "$project_id"};
 
@@ -179,7 +179,7 @@ class _ImagesPageState extends ResumableState<ImagesPage> with TickerProviderSta
     String? token = authenticateManager.getToken();
     String? project_id = authenticateManager.getProjectId();
 
-    String apiUrl = '$baseApiUrl/mobuploaddisplayimages';
+    String apiUrl = '${AppConfig.baseApiUrl}/mobuploaddisplayimages';
     var request = http.MultipartRequest('PUT', Uri.parse(apiUrl));
     final headers = {"Content-type": "multipart/form-data", "token": "$token", "project_id": "$project_id"};
 
@@ -245,7 +245,7 @@ class _ImagesPageState extends ResumableState<ImagesPage> with TickerProviderSta
     String? token = authenticateManager.getToken();
     String? project_id = authenticateManager.getProjectId();
 
-    String apiUrl = '$baseApiUrl/mobuploadsignimages';
+    String apiUrl = '${AppConfig.baseApiUrl}/mobuploadsignimages';
     var request = http.MultipartRequest('PUT', Uri.parse(apiUrl));
     final headers = {"Content-type": "multipart/form-data", "token": "$token", "project_id": "$project_id"};
 
@@ -310,7 +310,7 @@ class _ImagesPageState extends ResumableState<ImagesPage> with TickerProviderSta
     String? token = authenticateManager.getToken();
     String? project_id = authenticateManager.getProjectId();
 
-    String apiUrl = '$baseApiUrl/mobuploadshelfimages';
+    String apiUrl = '${AppConfig.baseApiUrl}/mobuploadshelfimages';
     var request = http.MultipartRequest('PUT', Uri.parse(apiUrl));
     final headers = {"Content-type": "multipart/form-data", "token": "$token", "project_id": "$project_id"};
 

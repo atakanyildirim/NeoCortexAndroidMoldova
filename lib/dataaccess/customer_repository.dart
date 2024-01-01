@@ -12,8 +12,11 @@ class CustomerRepository {
     await authenticateManager.init();
     final prefs = await SharedPreferences.getInstance();
 
-    final response = await http.get(Uri.parse("$baseApiUrl/webcustomerwithvariableplanograms"),
-        headers: <String, String>{"token": authenticateManager.getToken()!, "project_id": authenticateManager.getProjectId()!});
+    final response = await http.get(Uri.parse("${AppConfig.baseApiUrl}/webcustomerwithvariableplanograms"),
+        headers: <String, String>{
+          "token": authenticateManager.getToken()!,
+          "project_id": authenticateManager.getProjectId()!
+        });
 
     var customerData = jsonDecode(response.body);
 

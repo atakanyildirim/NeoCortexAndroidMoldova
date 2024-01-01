@@ -18,7 +18,7 @@ class AuthenticateManager {
   String? _userID;
 
   static Future<http.Response> attempt(String email, String password, String version) {
-    return http.post(Uri.parse("$baseApiUrl/moblogin"),
+    return http.post(Uri.parse("${AppConfig.baseApiUrl}/moblogin"),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=UTF-8',
         },
@@ -77,7 +77,6 @@ class AuthenticateManager {
   String? getProjectName() {
     return _projectName;
   }
-
 
   String? getEmail() {
     return _email;

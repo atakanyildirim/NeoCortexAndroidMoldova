@@ -56,11 +56,9 @@ class _LoginPageState extends State<LoginPage> {
       return Strength.weak;
     } else if (value.contains(RegExp(r'^[a-zA-Z0-9]{4,}$'))) {
       return Strength.medium;
-    } else if (value
-        .contains(RegExp(r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{7,}$'))) {
+    } else if (value.contains(RegExp(r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{7,}$'))) {
       return Strength.strong;
-    } else if (value.contains(RegExp(
-        r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$'))) {
+    } else if (value.contains(RegExp(r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$'))) {
       return Strength.veryStrong;
     } else {
       return Strength.empty;
@@ -102,17 +100,15 @@ class _LoginPageState extends State<LoginPage> {
             TextField(
               controller: emailTextEditingController,
               onChanged: (value) {
-                emailTextEditingController.value = TextEditingValue(
-                    text: value,
-                    selection: emailTextEditingController.selection);
+                emailTextEditingController.value =
+                    TextEditingValue(text: value, selection: emailTextEditingController.selection);
               },
               decoration: InputDecoration(
                   fillColor: inputBackgroundColor,
                   filled: true,
                   prefixIcon: const Icon(Icons.email),
                   prefixIconColor: const Color.fromARGB(255, 141, 141, 141),
-                  focusedBorder:
-                      const OutlineInputBorder(borderSide: BorderSide.none),
+                  focusedBorder: const OutlineInputBorder(borderSide: BorderSide.none),
                   border: const OutlineInputBorder(borderSide: BorderSide.none),
                   floatingLabelBehavior: FloatingLabelBehavior.never,
                   hintText: AppLocalizations.of(context)!.email),
@@ -125,8 +121,7 @@ class _LoginPageState extends State<LoginPage> {
                   filled: true,
                   prefixIconColor: const Color.fromARGB(255, 141, 141, 141),
                   prefixIcon: const Icon(Icons.lock_open),
-                  focusedBorder:
-                      const OutlineInputBorder(borderSide: BorderSide.none),
+                  focusedBorder: const OutlineInputBorder(borderSide: BorderSide.none),
                   border: const OutlineInputBorder(borderSide: BorderSide.none),
                   floatingLabelBehavior: FloatingLabelBehavior.never,
                   hintText: AppLocalizations.of(context)!.sifre),
@@ -145,32 +140,24 @@ class _LoginPageState extends State<LoginPage> {
                     PackageInfo packageInfo = await PackageInfo.fromPlatform();
 
                     AuthenticateManager.attempt(
-                            emailTextEditingController.text,
-                            passwordTextEditingController.text,
-                            packageInfo.version)
+                            emailTextEditingController.text, passwordTextEditingController.text, packageInfo.version)
                         .then((response) async {
                       if (response.statusCode == 200) {
                         await prefs.setBool("isRemember", isRemember);
                         await prefs.setBool("isTutorialWatched", true);
-                        await prefs.setString(
-                            "token", jsonDecode(response.body)["Content"]);
+                        await prefs.setString("token", jsonDecode(response.body)["Content"]);
                         if (context.mounted) {
-                          LocationPermission permission =
-                              await LocationManager.hasPermission();
-                          if (permission != LocationPermission.always &&
-                              permission != LocationPermission.whileInUse) {
+                          LocationPermission permission = await LocationManager.hasPermission();
+                          if (permission != LocationPermission.always && permission != LocationPermission.whileInUse) {
                             if (context.mounted) {
                               Navigator.of(context).pushReplacement(
-                                  MaterialPageRoute(
-                                      builder: (context) =>
-                                          const LocationPermissionPage()));
+                                  MaterialPageRoute(builder: (context) => const LocationPermissionPage()));
                             }
                           } else {
                             if (context.mounted) {
                               prefs.remove("customerwithvariableplanograms");
-                              Navigator.of(context).pushReplacement(
-                                  MaterialPageRoute(
-                                      builder: (context) => const HomePage()));
+                              Navigator.of(context)
+                                  .pushReplacement(MaterialPageRoute(builder: (context) => const HomePage()));
                             }
                           }
                         }
@@ -178,21 +165,16 @@ class _LoginPageState extends State<LoginPage> {
                         showDialog<void>(
                           context: context,
                           builder: (context) => AlertDialog(
-                              title: Text(AppLocalizations.of(context)!
-                                  .kullaniciBulunamadi),
+                              title: Text(AppLocalizations.of(context)!.kullaniciBulunamadi),
                               actions: [
                                 SizedBox(
                                     width: double.infinity,
                                     child: ElevatedButton(
-                                        style: ElevatedButton.styleFrom(
-                                            backgroundColor: anaRenk),
-                                        onPressed: () =>
-                                            Navigator.of(context).pop(),
-                                        child: Text(
-                                            AppLocalizations.of(context)!.ok)))
+                                        style: ElevatedButton.styleFrom(backgroundColor: anaRenk),
+                                        onPressed: () => Navigator.of(context).pop(),
+                                        child: Text(AppLocalizations.of(context)!.ok)))
                               ],
-                              content: Text(AppLocalizations.of(context)!
-                                  .kullaniciBulunamadiUyariMesaj)),
+                              content: Text(AppLocalizations.of(context)!.kullaniciBulunamadiUyariMesaj)),
                         );
                         setState(() {
                           isLoading = false;
@@ -205,21 +187,16 @@ class _LoginPageState extends State<LoginPage> {
                       showDialog<void>(
                         context: context,
                         builder: (context) => AlertDialog(
-                            title: Text(AppLocalizations.of(context)!
-                                .sunucuBaglantisiProblemi),
+                            title: Text(AppLocalizations.of(context)!.sunucuBaglantisiProblemi),
                             actions: [
                               SizedBox(
                                   width: double.infinity,
                                   child: ElevatedButton(
-                                      style: ElevatedButton.styleFrom(
-                                          backgroundColor: anaRenk),
-                                      onPressed: () =>
-                                          Navigator.of(context).pop(),
-                                      child: Text(
-                                          AppLocalizations.of(context)!.ok)))
+                                      style: ElevatedButton.styleFrom(backgroundColor: anaRenk),
+                                      onPressed: () => Navigator.of(context).pop(),
+                                      child: Text(AppLocalizations.of(context)!.ok)))
                             ],
-                            content: Text(AppLocalizations.of(context)!
-                                .sunucuBaglantiProblemMesaj)),
+                            content: Text(AppLocalizations.of(context)!.sunucuBaglantiProblemMesaj)),
                       );
                     });
                   }
@@ -230,8 +207,7 @@ class _LoginPageState extends State<LoginPage> {
                       )
                     : Text(
                         AppLocalizations.of(context)!.girisYap,
-                        style:
-                            const TextStyle(color: Colors.white, fontSize: 20),
+                        style: const TextStyle(color: Colors.white, fontSize: 20),
                       ),
               ),
             ),
@@ -270,46 +246,31 @@ class _LoginPageState extends State<LoginPage> {
                         return StatefulBuilder(
                           builder: (context, setState) {
                             return AlertDialog(
-                              title: Text(
-                                  AppLocalizations.of(context)!.sifremiUnuttum),
+                              title: Text(AppLocalizations.of(context)!.sifremiUnuttum),
                               actions: [
                                 SizedBox(
                                     width: double.infinity,
                                     child: ElevatedButton(
-                                        style: ElevatedButton.styleFrom(
-                                            backgroundColor: anaRenk),
+                                        style: ElevatedButton.styleFrom(backgroundColor: anaRenk),
                                         onPressed: () async {
-                                          if (passwordTextEditingController
-                                                  .text !=
-                                              againPasswordTextEditingController
-                                                  .text) {
+                                          if (passwordTextEditingController.text !=
+                                              againPasswordTextEditingController.text) {
                                             setState(() {
-                                              info =
-                                                  AppLocalizations.of(context)!
-                                                      .sifrelerUyusmuyor;
+                                              info = AppLocalizations.of(context)!.sifrelerUyusmuyor;
                                             });
                                           } else {
-                                            CountdownTimer countdownTimer =
-                                                CountdownTimer(
-                                              Duration(
-                                                  seconds:
-                                                      _remainingTimeInSeconds),
+                                            CountdownTimer countdownTimer = CountdownTimer(
+                                              Duration(seconds: _remainingTimeInSeconds),
                                               Duration(seconds: 1),
                                             );
 
-                                            var sub =
-                                                countdownTimer.listen(null);
+                                            var sub = countdownTimer.listen(null);
                                             final response;
                                             if (mailGonderildi == false) {
                                               response = await http.post(
-                                                  Uri.parse(
-                                                      "$baseApiUrl/forgetpassword"),
-                                                  body: jsonEncode(<String,
-                                                      String>{
-                                                    'email':
-                                                        emailTextEditingController
-                                                            .text
-                                                  }));
+                                                  Uri.parse("${AppConfig.baseApiUrl}/forgetpassword"),
+                                                  body: jsonEncode(
+                                                      <String, String>{'email': emailTextEditingController.text}));
 
                                               var j = jsonDecode(response.body);
                                               if (j["Status"] == "Error") {
@@ -322,12 +283,9 @@ class _LoginPageState extends State<LoginPage> {
                                                   mailGonderildi = true;
                                                 });
 
-                                                sub.onData(
-                                                    (CountdownTimer duration) {
+                                                sub.onData((CountdownTimer duration) {
                                                   setState(() {
-                                                    _remainingTimeInSeconds =
-                                                        _remainingTimeInSeconds -
-                                                            1;
+                                                    _remainingTimeInSeconds = _remainingTimeInSeconds - 1;
                                                     info =
                                                         "Telefonunuza gelen onay kodunu giriniz. Kalan süre ${_remainingTimeInSeconds.toString()} saniye";
                                                   });
@@ -337,34 +295,25 @@ class _LoginPageState extends State<LoginPage> {
                                                   sub.cancel();
                                                   setState(() {
                                                     mailGonderildi = false;
-                                                    _remainingTimeInSeconds =
-                                                        180;
+                                                    _remainingTimeInSeconds = 180;
                                                   });
                                                 });
                                               }
                                             } else {
                                               if (_strength.text != "cake") {
                                                 setState(() {
-                                                  info = AppLocalizations.of(
-                                                          context)!
+                                                  info = AppLocalizations.of(context)!
                                                       .sifrelerSifrelemeAlgoritmasinaUygunDegil;
                                                 });
                                               } else {
                                                 response = await http.post(
-                                                    Uri.parse(
-                                                        "$baseApiUrl/confirmpassword"),
-                                                    body: jsonEncode(<String,
-                                                        String>{
-                                                      'confirmation_code':
-                                                          confirmCodeTextEditingController
-                                                              .text,
-                                                      'new_password':
-                                                          passwordTextEditingController
-                                                              .text
+                                                    Uri.parse("${AppConfig.baseApiUrl}/confirmpassword"),
+                                                    body: jsonEncode(<String, String>{
+                                                      'confirmation_code': confirmCodeTextEditingController.text,
+                                                      'new_password': passwordTextEditingController.text
                                                     }));
 
-                                                var j =
-                                                    jsonDecode(response.body);
+                                                var j = jsonDecode(response.body);
                                                 if (j["Status"] == "Error") {
                                                   setState(() {
                                                     info = j["Content"];
@@ -376,21 +325,15 @@ class _LoginPageState extends State<LoginPage> {
                                                     sub.cancel();
                                                     Fluttertoast.showToast(
                                                         msg: "İşlem Başarılı.",
-                                                        toastLength:
-                                                            Toast.LENGTH_SHORT,
-                                                        gravity:
-                                                            ToastGravity.BOTTOM,
+                                                        toastLength: Toast.LENGTH_SHORT,
+                                                        gravity: ToastGravity.BOTTOM,
                                                         timeInSecForIosWeb: 1,
-                                                        backgroundColor:
-                                                            Colors.green,
+                                                        backgroundColor: Colors.green,
                                                         textColor: Colors.white,
                                                         fontSize: 16.0);
 
-                                                    Future.delayed(
-                                                        Duration(seconds: 2),
-                                                        () {
-                                                      Navigator.of(context)
-                                                          .pop();
+                                                    Future.delayed(Duration(seconds: 2), () {
+                                                      Navigator.of(context).pop();
                                                     });
                                                   });
                                                 }
@@ -398,9 +341,7 @@ class _LoginPageState extends State<LoginPage> {
                                             }
                                           }
                                         },
-                                        child: Text(
-                                            AppLocalizations.of(context)!
-                                                .sifirla)))
+                                        child: Text(AppLocalizations.of(context)!.sifirla)))
                               ],
                               content: Column(
                                 mainAxisSize: MainAxisSize.min,
@@ -420,29 +361,18 @@ class _LoginPageState extends State<LoginPage> {
                                     child: TextField(
                                       controller: emailTextEditingController,
                                       onChanged: (value) {
-                                        emailTextEditingController.value =
-                                            TextEditingValue(
-                                                text: value,
-                                                selection:
-                                                    emailTextEditingController
-                                                        .selection);
+                                        emailTextEditingController.value = TextEditingValue(
+                                            text: value, selection: emailTextEditingController.selection);
                                       },
                                       decoration: InputDecoration(
                                           fillColor: inputBackgroundColor,
                                           filled: true,
                                           prefixIcon: const Icon(Icons.email),
-                                          prefixIconColor: const Color.fromARGB(
-                                              255, 141, 141, 141),
-                                          focusedBorder:
-                                              const OutlineInputBorder(
-                                                  borderSide: BorderSide.none),
-                                          border: const OutlineInputBorder(
-                                              borderSide: BorderSide.none),
-                                          floatingLabelBehavior:
-                                              FloatingLabelBehavior.never,
-                                          hintText:
-                                              AppLocalizations.of(context)!
-                                                  .email),
+                                          prefixIconColor: const Color.fromARGB(255, 141, 141, 141),
+                                          focusedBorder: const OutlineInputBorder(borderSide: BorderSide.none),
+                                          border: const OutlineInputBorder(borderSide: BorderSide.none),
+                                          floatingLabelBehavior: FloatingLabelBehavior.never,
+                                          hintText: AppLocalizations.of(context)!.email),
                                     ),
                                   ),
                                   Visibility(
@@ -462,32 +392,21 @@ class _LoginPageState extends State<LoginPage> {
                                   ),
                                   Visibility(
                                     visible: false,
-                                    child: Text(_strength.text.isNotEmpty
-                                        ? 'Şifreniz : ${_strength.text}'
-                                        : ''),
+                                    child: Text(_strength.text.isNotEmpty ? 'Şifreniz : ${_strength.text}' : ''),
                                   ),
                                   Visibility(
                                     visible: mailGonderildi,
                                     child: TextField(
-                                      controller:
-                                          confirmCodeTextEditingController,
+                                      controller: confirmCodeTextEditingController,
                                       decoration: InputDecoration(
                                           fillColor: inputBackgroundColor,
                                           filled: true,
-                                          prefixIconColor: const Color.fromARGB(
-                                              255, 141, 141, 141),
-                                          prefixIcon:
-                                              const Icon(Icons.password),
-                                          focusedBorder:
-                                              const OutlineInputBorder(
-                                                  borderSide: BorderSide.none),
-                                          border: const OutlineInputBorder(
-                                              borderSide: BorderSide.none),
-                                          floatingLabelBehavior:
-                                              FloatingLabelBehavior.never,
-                                          hintText:
-                                              AppLocalizations.of(context)!
-                                                  .onayKodu),
+                                          prefixIconColor: const Color.fromARGB(255, 141, 141, 141),
+                                          prefixIcon: const Icon(Icons.password),
+                                          focusedBorder: const OutlineInputBorder(borderSide: BorderSide.none),
+                                          border: const OutlineInputBorder(borderSide: BorderSide.none),
+                                          floatingLabelBehavior: FloatingLabelBehavior.never,
+                                          hintText: AppLocalizations.of(context)!.onayKodu),
                                     ),
                                   ),
                                   Visibility(
@@ -501,8 +420,7 @@ class _LoginPageState extends State<LoginPage> {
                                     child: TextField(
                                       onChanged: (value) => {
                                         setState(() {
-                                          _strength =
-                                              _calculatePasswordStrength(value);
+                                          _strength = _calculatePasswordStrength(value);
                                         })
                                       },
                                       controller: passwordTextEditingController,
@@ -510,20 +428,12 @@ class _LoginPageState extends State<LoginPage> {
                                       decoration: InputDecoration(
                                           fillColor: inputBackgroundColor,
                                           filled: true,
-                                          prefixIconColor: const Color.fromARGB(
-                                              255, 141, 141, 141),
-                                          prefixIcon:
-                                              const Icon(Icons.lock_open),
-                                          focusedBorder:
-                                              const OutlineInputBorder(
-                                                  borderSide: BorderSide.none),
-                                          border: const OutlineInputBorder(
-                                              borderSide: BorderSide.none),
-                                          floatingLabelBehavior:
-                                              FloatingLabelBehavior.never,
-                                          hintText:
-                                              AppLocalizations.of(context)!
-                                                  .yeniSifre),
+                                          prefixIconColor: const Color.fromARGB(255, 141, 141, 141),
+                                          prefixIcon: const Icon(Icons.lock_open),
+                                          focusedBorder: const OutlineInputBorder(borderSide: BorderSide.none),
+                                          border: const OutlineInputBorder(borderSide: BorderSide.none),
+                                          floatingLabelBehavior: FloatingLabelBehavior.never,
+                                          hintText: AppLocalizations.of(context)!.yeniSifre),
                                     ),
                                   ),
                                   Visibility(
@@ -535,26 +445,17 @@ class _LoginPageState extends State<LoginPage> {
                                   Visibility(
                                     visible: mailGonderildi,
                                     child: TextField(
-                                      controller:
-                                          againPasswordTextEditingController,
+                                      controller: againPasswordTextEditingController,
                                       obscureText: true,
                                       decoration: InputDecoration(
                                           fillColor: inputBackgroundColor,
                                           filled: true,
-                                          prefixIconColor: const Color.fromARGB(
-                                              255, 141, 141, 141),
-                                          prefixIcon:
-                                              const Icon(Icons.lock_open),
-                                          focusedBorder:
-                                              const OutlineInputBorder(
-                                                  borderSide: BorderSide.none),
-                                          border: const OutlineInputBorder(
-                                              borderSide: BorderSide.none),
-                                          floatingLabelBehavior:
-                                              FloatingLabelBehavior.never,
-                                          hintText:
-                                              AppLocalizations.of(context)!
-                                                  .sifreYeniden),
+                                          prefixIconColor: const Color.fromARGB(255, 141, 141, 141),
+                                          prefixIcon: const Icon(Icons.lock_open),
+                                          focusedBorder: const OutlineInputBorder(borderSide: BorderSide.none),
+                                          border: const OutlineInputBorder(borderSide: BorderSide.none),
+                                          floatingLabelBehavior: FloatingLabelBehavior.never,
+                                          hintText: AppLocalizations.of(context)!.sifreYeniden),
                                     ),
                                   ),
                                 ],

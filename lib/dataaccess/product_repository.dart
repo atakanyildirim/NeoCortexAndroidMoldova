@@ -9,8 +9,10 @@ class ProductRepository {
     AuthenticateManager authenticateManager = AuthenticateManager();
     await authenticateManager.init();
     final prefs = await SharedPreferences.getInstance();
-    final response = await http.get(Uri.parse("$baseApiUrl/getpiflist"),
-        headers: <String, String>{"token": authenticateManager.getToken()!, "project_id": authenticateManager.getProjectId()!});
+    final response = await http.get(Uri.parse("${AppConfig.baseApiUrl}/getpiflist"), headers: <String, String>{
+      "token": authenticateManager.getToken()!,
+      "project_id": authenticateManager.getProjectId()!
+    });
 
     var imageData = jsonDecode(response.body);
 

@@ -181,6 +181,7 @@
   "hesaplama2" : "Расчет 2",
   "hesaplama3" : "Расчет 3",
   "digerleri" : "Другие",
-  "ziyaretEdememeNedeni" : "Ziyaret Edememe Nedeni Gir"
-
+  "ziyaretEdememeNedeni" : "Ziyaret Edememe Nedeni Gir",
+  "guncelleMesaji" : "Lütfen uygulamayı güncelleyiniz.",
+  "guncelle" : "Güncelle"
 }

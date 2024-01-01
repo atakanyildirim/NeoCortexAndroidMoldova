@@ -15,8 +15,11 @@ class TransactionsRepository {
 
     final response = await http.get(
         Uri.parse(
-            "$baseApiUrl/getcoolertransactionsnew?start_date=${now.year}${now.month}01&end_date=${now.year}${now.month}${lastDate.day}"),
-        headers: <String, String>{"token": authenticateManager.getToken()!, "project_id": authenticateManager.getProjectId()!});
+            "${AppConfig.baseApiUrl}/getcoolertransactionsnew?start_date=${now.year}${now.month}01&end_date=${now.year}${now.month}${lastDate.day}"),
+        headers: <String, String>{
+          "token": authenticateManager.getToken()!,
+          "project_id": authenticateManager.getProjectId()!
+        });
 
     var bodyDecoded = jsonDecode(response.body);
 

@@ -9,7 +9,7 @@ Widget neoCortexTitleWidget() {
       Padding(
         padding: const EdgeInsets.only(left: 8.0),
         child: Text(
-          appTitle,
+          AppConfig.appTitle,
           style: const TextStyle(fontWeight: FontWeight.bold),
         ),
       )

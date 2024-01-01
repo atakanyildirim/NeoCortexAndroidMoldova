@@ -181,5 +181,7 @@
   "hesaplama2" : "Calculation 2",
   "hesaplama3" : "Calculation 3",
   "digerleri" : "Others",
-  "ziyaretEdememeNedeni" : "Enter Reason for Not Visiting"
+  "ziyaretEdememeNedeni" : "Enter Reason for Not Visiting",
+  "guncelleMesaji" : "Lütfen uygulamayı güncelleyiniz.",
+  "guncelle" : "Güncelle"
 }

@@ -770,7 +770,7 @@ class _DashboardPageState extends State<DashboardPage>
                                                         });
                                                       } else {
                                                         final response = await http.post(
-                                                            Uri.parse("$baseApiUrl/changepassword"),
+                                                            Uri.parse("${AppConfig.baseApiUrl}/changepassword"),
                                                             headers: <String, String>{
                                                               "token": authenticateManager!.getToken()!,
                                                               "project_id": authenticateManager!.getProjectId()!

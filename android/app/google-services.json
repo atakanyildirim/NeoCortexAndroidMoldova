@@ -7,6 +7,25 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:216394594579:android:13abbc5159a18560c482e6",
+        "android_client_info": {
+          "package_name": "com.aefesmd.neocortex.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXaDK8DkyKIZHTzu3-TNM2Gy23OzrAzNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:216394594579:android:9f677b2f70bdcd1bc482e6",
         "android_client_info": {
           "package_name": "com.neocortex.app"

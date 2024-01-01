@@ -29,12 +29,9 @@ class ImageDetailPage extends StatefulWidget {
 }
 
 class _ImageDetailPageState extends State<ImageDetailPage> {
-  final slider =
-      PageController(initialPage: 0, viewportFraction: 0.5, keepPage: false);
-  final imageSliderController =
-      PageController(initialPage: 0, viewportFraction: 0.5, keepPage: false);
-  final listController =
-      PageController(initialPage: 0, viewportFraction: 0.33, keepPage: false);
+  final slider = PageController(initialPage: 0, viewportFraction: 0.5, keepPage: false);
+  final imageSliderController = PageController(initialPage: 0, viewportFraction: 0.5, keepPage: false);
+  final listController = PageController(initialPage: 0, viewportFraction: 0.33, keepPage: false);
   String type;
   _ImageDetailPageState(this.type);
   AuthenticateManager? authenticateManager;
@@ -119,11 +116,9 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
       /* toplamUrun = dolapDataJson['Content']['planogram_result']
           ['total_number_of_products']; */
 
-      musthave = dolapDataJson['Content']['planogram_result']
-          ['not_found_musthave_products'];
+      musthave = dolapDataJson['Content']['planogram_result']['not_found_musthave_products'];
 
-      shelfShare =
-          dolapDataJson['Content']['planogram_result']['shelf_share_score'];
+      shelfShare = dolapDataJson['Content']['planogram_result']['shelf_share_score'];
     }
 
     /* Tabela adları için  */
@@ -171,21 +166,14 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
 
           if (sicakRafUrunler.containsKey(yeniAnahtar)) {
             // Eğer anahtar zaten varsa, "sayi" değerini 1 arttır.
-            sicakRafUrunler[yeniAnahtar]?[0]["sayi"] =
-                sicakRafUrunler[yeniAnahtar]?[0]["sayi"] + 1;
+            sicakRafUrunler[yeniAnahtar]?[0]["sayi"] = sicakRafUrunler[yeniAnahtar]?[0]["sayi"] + 1;
           } else {
             // Eğer anahtar yoksa, yeni bir anahtar oluştur ve "sayi" değerini 1 olarak ayarla.
 
             for (var d in data2) {
               if (d.split('-')[1] == yeniAnahtar) {
                 sicakRafUrunler[yeniAnahtar] = [
-                  {
-                    "label": label,
-                    "sap_code": yeniAnahtar,
-                    "sayi": 1,
-                    "shelf_share_category": "Efes",
-                    "full_name": d
-                  }
+                  {"label": label, "sap_code": yeniAnahtar, "sayi": 1, "shelf_share_category": "Efes", "full_name": d}
                 ];
                 break;
               }
@@ -212,8 +200,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
 
           if (urunler.containsKey(yeniAnahtar)) {
             // Eğer anahtar zaten varsa, "sayi" değerini 1 arttır.
-            urunler[yeniAnahtar]?[0]["sayi"] =
-                urunler[yeniAnahtar]?[0]["sayi"] + 1;
+            urunler[yeniAnahtar]?[0]["sayi"] = urunler[yeniAnahtar]?[0]["sayi"] + 1;
           } else {
             // Eğer anahtar yoksa, yeni bir anahtar oluştur ve "sayi" değerini 1 olarak ayarla.
 
@@ -294,8 +281,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                   final key = musthave.keys.elementAt(index);
                   final value = musthave[key];
 
-                  var x =
-                      data2.where((element) => element.split('-')[1] == key);
+                  var x = data2.where((element) => element.split('-')[1] == key);
                   var full_name = "";
                   for (var item in x) {
                     full_name = item;
@@ -307,7 +293,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                         cacheManager: customCacheManager,
                         key: UniqueKey(),
                         httpHeaders: {'token': token, 'project_id': projectId},
-                        imageUrl: "$baseApiUrl/getimagefile/$full_name",
+                        imageUrl: "${AppConfig.baseApiUrl}/getimagefile/$full_name",
                         imageBuilder: (context, imageProvider) => Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
@@ -316,10 +302,8 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                             ),
                           ),
                         ),
-                        placeholder: (context, url) =>
-                            const CircularProgressIndicator(),
-                        errorWidget: (context, url, error) =>
-                            const Icon(Icons.error),
+                        placeholder: (context, url) => const CircularProgressIndicator(),
+                        errorWidget: (context, url, error) => const Icon(Icons.error),
                       ),
                     ),
                     title: Text(value),
@@ -378,8 +362,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                           ),
                           circularIndicator(
                             text: value["percentage"].toString(),
-                            style: const TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 10.0),
+                            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 10.0),
                             color: Colors.blue,
                             percent: (value["percentage"] / 100),
                             lineWidth: 5,
@@ -425,7 +408,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                         final key = sicakRafHesaplamalar1.keys.elementAt(index);
                         final value = sicakRafHesaplamalar1[key];
                         var yuzde = value * 100;
-                
+
                         return defaultBox(
                           child: ListTile(
                             title: Text(
@@ -438,9 +421,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                               children: [
                                 circularIndicator(
                                   text: yuzde.toStringAsFixed(1),
-                                  style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 10.0),
+                                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 10.0),
                                   color: Colors.blue,
                                   percent: value,
                                   lineWidth: 5,
@@ -461,7 +442,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                         final key = sicakRafHesaplamalar2.keys.elementAt(index);
                         final value = sicakRafHesaplamalar2[key];
                         var yuzde = value * 100;
-                
+
                         return defaultBox(
                           child: ListTile(
                             title: Text(
@@ -474,9 +455,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                               children: [
                                 circularIndicator(
                                   text: yuzde.toStringAsFixed(1),
-                                  style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 10.0),
+                                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 10.0),
                                   color: Colors.blue,
                                   percent: value,
                                   lineWidth: 5,
@@ -497,7 +476,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                         final key = sicakRafHesaplamalar3.keys.elementAt(index);
                         final value = sicakRafHesaplamalar3[key];
                         var yuzde = value * 100;
-                
+
                         return defaultBox(
                           child: ListTile(
                             title: Text(
@@ -510,9 +489,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                               children: [
                                 circularIndicator(
                                   text: yuzde.toStringAsFixed(1),
-                                  style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 10.0),
+                                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 10.0),
                                   color: Colors.blue,
                                   percent: value,
                                   lineWidth: 5,
@@ -546,41 +523,29 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
       dizi.add({
         "baslik": "Must Have",
         "tip": 1,
-        "text":
-            "${dolapDataJson['Content']['planogram_result']['drinks_musthave_score']}%",
-        "yuzde": dolapDataJson['Content']['planogram_result']
-                ['drinks_musthave_score'] /
-            100,
+        "text": "${dolapDataJson['Content']['planogram_result']['drinks_musthave_score']}%",
+        "yuzde": dolapDataJson['Content']['planogram_result']['drinks_musthave_score'] / 100,
       });
 
       dizi.add({
         "baslik": "Planogram İdeal",
         "tip": 2,
-        "text":
-            "${dolapDataJson['Content']['planogram_result']['planogram_realization_score']}%",
-        "yuzde": dolapDataJson['Content']['planogram_result']
-                ['planogram_realization_score'] /
-            100,
+        "text": "${dolapDataJson['Content']['planogram_result']['planogram_realization_score']}%",
+        "yuzde": dolapDataJson['Content']['planogram_result']['planogram_realization_score'] / 100,
       });
 
       dizi.add({
         "baslik": "Planogram Bulunurluk",
         "tip": 3,
-        "text":
-            "${dolapDataJson['Content']['planogram_result']['planogram_availability_score']}%",
-        "yuzde": dolapDataJson['Content']['planogram_result']
-                ['planogram_availability_score'] /
-            100,
+        "text": "${dolapDataJson['Content']['planogram_result']['planogram_availability_score']}%",
+        "yuzde": dolapDataJson['Content']['planogram_result']['planogram_availability_score'] / 100,
       });
 
       dizi.add({
         "baslik": "Shelf Share",
         "tip": 4,
-        "text":
-            "${dolapDataJson['Content']['planogram_result']['shelf_share_score']['Efes']['percentage']}%",
-        "yuzde": dolapDataJson['Content']['planogram_result']
-                ['shelf_share_score']['Efes']['percentage'] /
-            100,
+        "text": "${dolapDataJson['Content']['planogram_result']['shelf_share_score']['Efes']['percentage']}%",
+        "yuzde": dolapDataJson['Content']['planogram_result']['shelf_share_score']['Efes']['percentage'] / 100,
       });
     }
 
@@ -605,8 +570,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                   durumBilgileriDondur(
                       baslik: dizi[index]["baslik"],
                       text: dizi[index]["text"],
-                      style: const TextStyle(
-                          fontWeight: FontWeight.bold, fontSize: 20.0),
+                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
                       color: Colors.blueAccent,
                       percent: dizi[index]["yuzde"],
                       lineWidth: 15.0,
@@ -632,8 +596,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                       durumBilgileriDondur(
                           baslik: dizi[index]["baslik"],
                           text: dizi[index]["text"],
-                          style: const TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 20.0),
+                          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
                           color: Colors.blueAccent,
                           percent: dizi[index]["yuzde"],
                           lineWidth: 15.0,
@@ -659,8 +622,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                           durumBilgileriDondur(
                               baslik: dizi[index]["baslik"],
                               text: dizi[index]["text"],
-                              style: const TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 20.0),
+                              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
                               color: Colors.blueAccent,
                               percent: dizi[index]["yuzde"],
                               lineWidth: 15.0,
@@ -683,8 +645,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                       child: durumBilgileriDondur(
                           baslik: dizi[index]["baslik"],
                           text: dizi[index]["text"],
-                          style: const TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 20.0),
+                          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
                           color: Colors.blueAccent,
                           percent: dizi[index]["yuzde"],
                           lineWidth: 15.0,
@@ -772,10 +733,8 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                   child: debug == false
                       ? GestureDetector(
                           onTap: () {
-                            showImageViewer(context,
-                                Image.file(File(json[index]["image"])).image,
-                                swipeDismissible: true,
-                                doubleTapZoomable: true);
+                            showImageViewer(context, Image.file(File(json[index]["image"])).image,
+                                swipeDismissible: true, doubleTapZoomable: true);
                           },
                           child: Image.file(
                             File(json[index]["image"]),
@@ -803,14 +762,10 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                       dolapDataJson["giden_index"] = index;
                       dolapDataJson["target_planogram_for_this_customer"] =
                           json[index]["target_planogram_for_this_customer"];
-                      dolapDataJson["planogram_category_colors"] =
-                          json[index]["planogram_category_colors"];
+                      dolapDataJson["planogram_category_colors"] = json[index]["planogram_category_colors"];
                       //print("Data : $data");
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ComparePage(
-                                  data: jsonEncode(dolapDataJson))));
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => ComparePage(data: jsonEncode(dolapDataJson))));
                     },
                   ),
                 ),
@@ -865,8 +820,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
             IconButton(
               icon: const Icon(Icons.save, color: anaRenk),
               onPressed: () {
-                Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) => const HomePage()));
+                Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const HomePage()));
               },
             ),
           ],
@@ -899,8 +853,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                           AppLocalizations.of(context)!.toplamSayilanUrunSayisi,
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        trailing: Text(AppLocalizations.of(context)!
-                            .analizAdet(toplamUrun.toString())),
+                        trailing: Text(AppLocalizations.of(context)!.analizAdet(toplamUrun.toString())),
                       ),
                     ),
                   ),
@@ -915,8 +868,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                       trailing: Wrap(
                         crossAxisAlignment: WrapCrossAlignment.center,
                         children: [
-                          Text(AppLocalizations.of(context)!
-                              .gecenSure(json[0]["gecensure"].toString())),
+                          Text(AppLocalizations.of(context)!.gecenSure(json[0]["gecensure"].toString())),
                           const SizedBox(width: 10),
                           const Icon(
                             Icons.insights_rounded,
@@ -955,28 +907,23 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                   child: defaultBox(
                     child: ListTile(
                       onTap: () async {
-                        var customers =
-                            await CustomerManager.getCachedCustomerData();
+                        var customers = await CustomerManager.getCachedCustomerData();
                         print(customers);
                         Customer customerDetail = customers
-                            .where((element) =>
-                                element.customerSapCode.toString() ==
-                                json[0]["customerCode"].toString())
+                            .where(
+                                (element) => element.customerSapCode.toString() == json[0]["customerCode"].toString())
                             .first;
                         // ignore: use_build_context_synchronously
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => CustomerDetailExternalPage(
-                                  customer: customerDetail),
+                              builder: (context) => CustomerDetailExternalPage(customer: customerDetail),
                             ));
                       },
-                      leading: const Icon(Icons.radio_button_checked,
-                          color: anaRenk),
+                      leading: const Icon(Icons.radio_button_checked, color: anaRenk),
                       title: Text(
                         json[0]["customerName"],
-                        style: const TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.w600),
+                        style: const TextStyle(color: Colors.black, fontWeight: FontWeight.w600),
                       ),
                       subtitle: Wrap(
                         direction: Axis.vertical,
@@ -994,8 +941,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                             padding: const EdgeInsets.all(3),
                             child: Text(
                               json[0]["customerCode"].toString(),
-                              style: const TextStyle(
-                                  color: Colors.white, fontSize: 15),
+                              style: const TextStyle(color: Colors.white, fontSize: 15),
                             ),
                           ),
                         ],
@@ -1029,8 +975,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                       ),
                     ),
                   ),
-                if (tabelaAdlari.length >
-                    0) // Tabela var burada ekrana tabelaları basacak
+                if (tabelaAdlari.length > 0) // Tabela var burada ekrana tabelaları basacak
                   Container(
                     height: 50.0,
                     margin: const EdgeInsets.only(left: 18, top: 15, right: 18),
@@ -1050,23 +995,19 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                                 color: Colors.grey.withOpacity(0.1),
                                 spreadRadius: 5,
                                 blurRadius: 7,
-                                offset: const Offset(
-                                    0, 3), // changes position of shadow
+                                offset: const Offset(0, 3), // changes position of shadow
                               ),
                             ],
                           ),
                           child: Text(
                             tabelaAdlari[index],
-                            style: const TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold),
+                            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
                           ),
                         );
                       },
                     ),
                   ),
-                if (kategoriListesi.length >
-                    0) // Kategori varsa burayı dolduracak
+                if (kategoriListesi.length > 0) // Kategori varsa burayı dolduracak
                   Container(
                     height: 50.0,
                     margin: const EdgeInsets.only(left: 18, top: 15, right: 18),
@@ -1082,8 +1023,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                               itemCount: kategoriListesi.length,
                               padEnds: false,
                               itemBuilder: (_, index) {
-                                return kategoriListesi[
-                                    index % kategoriListesi.length];
+                                return kategoriListesi[index % kategoriListesi.length];
                               },
                             ),
                           ),
@@ -1093,18 +1033,15 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                   ),
                 if (sonListe.length > 0)
                   ConstrainedBox(
-                    constraints:
-                        const BoxConstraints(maxHeight: 2000, minHeight: 56.0),
+                    constraints: const BoxConstraints(maxHeight: 2000, minHeight: 56.0),
                     child: Padding(
-                      padding: const EdgeInsets.only(
-                          right: 14, left: 14, top: 15, bottom: 15),
+                      padding: const EdgeInsets.only(right: 14, left: 14, top: 15, bottom: 15),
                       child: ListView.builder(
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
                         itemCount: sonListe.length,
                         itemBuilder: (BuildContext context, int index) {
-                          double urunYuzdesi =
-                              (sonListe[index]["sayi"] / toplamUrun);
+                          double urunYuzdesi = (sonListe[index]["sayi"] / toplamUrun);
 
                           return defaultBox(
                             child: ListTile(
@@ -1113,14 +1050,9 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                                 child: CachedNetworkImage(
                                   cacheManager: customCacheManager,
                                   key: UniqueKey(),
-                                  httpHeaders: {
-                                    'token': token,
-                                    'project_id': projectId
-                                  },
-                                  imageUrl:
-                                      "$baseApiUrl/getimagefile/${sonListe[index]["full_name"]}",
-                                  imageBuilder: (context, imageProvider) =>
-                                      Container(
+                                  httpHeaders: {'token': token, 'project_id': projectId},
+                                  imageUrl: "${AppConfig.baseApiUrl}/getimagefile/${sonListe[index]["full_name"]}",
+                                  imageBuilder: (context, imageProvider) => Container(
                                     decoration: BoxDecoration(
                                       image: DecorationImage(
                                         image: imageProvider,
@@ -1128,16 +1060,13 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                                       ),
                                     ),
                                   ),
-                                  placeholder: (context, url) =>
-                                      const CircularProgressIndicator(),
-                                  errorWidget: (context, url, error) =>
-                                      const Icon(Icons.error),
+                                  placeholder: (context, url) => const CircularProgressIndicator(),
+                                  errorWidget: (context, url, error) => const Icon(Icons.error),
                                 ),
                               ),
                               title: Text(
                                 sonListe[index]["label"],
-                                style: const TextStyle(
-                                    fontWeight: FontWeight.w600),
+                                style: const TextStyle(fontWeight: FontWeight.w600),
                               ),
                               trailing: Wrap(
                                 direction: Axis.vertical,
@@ -1150,11 +1079,8 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                                     width: 20,
                                   ),
                                   circularIndicator(
-                                    text:
-                                        (urunYuzdesi * 100).round().toString(),
-                                    style: const TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 10.0),
+                                    text: (urunYuzdesi * 100).round().toString(),
+                                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 10.0),
                                     color: Colors.blue,
                                     percent: urunYuzdesi,
                                     lineWidth: 5,
@@ -1182,8 +1108,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                           color: Colors.grey.withOpacity(0.1),
                           spreadRadius: 5,
                           blurRadius: 7,
-                          offset:
-                              const Offset(0, 3), // changes position of shadow
+                          offset: const Offset(0, 3), // changes position of shadow
                         ),
                       ],
                     ),
@@ -1191,8 +1116,7 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                       children: [
                         Text(
                           AppLocalizations.of(context)!.sicakRaf,
-                          style: const TextStyle(
-                              color: Colors.white, fontSize: 10),
+                          style: const TextStyle(color: Colors.white, fontSize: 10),
                         ),
                         const Spacer(),
                         Container(
@@ -1219,19 +1143,15 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                   ),
                 if (sonListeSicakRaf.length > 0)
                   ConstrainedBox(
-                    constraints:
-                        const BoxConstraints(maxHeight: 2000, minHeight: 56.0),
+                    constraints: const BoxConstraints(maxHeight: 2000, minHeight: 56.0),
                     child: Padding(
-                      padding: const EdgeInsets.only(
-                          right: 14, left: 14, top: 15, bottom: 15),
+                      padding: const EdgeInsets.only(right: 14, left: 14, top: 15, bottom: 15),
                       child: ListView.builder(
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
                         itemCount: sonListeSicakRaf.length,
                         itemBuilder: (BuildContext context, int index) {
-                          double urunYuzdesi = (sonListeSicakRaf[index]
-                                  ["sayi"] /
-                              toplamUrunSicakRaf);
+                          double urunYuzdesi = (sonListeSicakRaf[index]["sayi"] / toplamUrunSicakRaf);
 
                           return defaultBox(
                             child: ListTile(
@@ -1240,14 +1160,10 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                                 child: CachedNetworkImage(
                                   cacheManager: customCacheManager,
                                   key: UniqueKey(),
-                                  httpHeaders: {
-                                    'token': token,
-                                    'project_id': projectId
-                                  },
+                                  httpHeaders: {'token': token, 'project_id': projectId},
                                   imageUrl:
-                                      "$baseApiUrl/getimagefile/${sonListeSicakRaf[index]["full_name"]}",
-                                  imageBuilder: (context, imageProvider) =>
-                                      Container(
+                                      "${AppConfig.baseApiUrl}/getimagefile/${sonListeSicakRaf[index]["full_name"]}",
+                                  imageBuilder: (context, imageProvider) => Container(
                                     decoration: BoxDecoration(
                                       image: DecorationImage(
                                         image: imageProvider,
@@ -1255,16 +1171,13 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                                       ),
                                     ),
                                   ),
-                                  placeholder: (context, url) =>
-                                      const CircularProgressIndicator(),
-                                  errorWidget: (context, url, error) =>
-                                      const Icon(Icons.error),
+                                  placeholder: (context, url) => const CircularProgressIndicator(),
+                                  errorWidget: (context, url, error) => const Icon(Icons.error),
                                 ),
                               ),
                               title: Text(
                                 sonListeSicakRaf[index]["label"],
-                                style: const TextStyle(
-                                    fontWeight: FontWeight.w600),
+                                style: const TextStyle(fontWeight: FontWeight.w600),
                               ),
                               trailing: Wrap(
                                 direction: Axis.vertical,
@@ -1277,11 +1190,8 @@ class _ImageDetailPageState extends State<ImageDetailPage> {
                                     width: 20,
                                   ),
                                   circularIndicator(
-                                    text:
-                                        (urunYuzdesi * 100).round().toString(),
-                                    style: const TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 10.0),
+                                    text: (urunYuzdesi * 100).round().toString(),
+                                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 10.0),
                                     color: Colors.blue,
                                     percent: urunYuzdesi,
                                     lineWidth: 5,
